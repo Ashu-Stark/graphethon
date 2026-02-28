@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRAPH-E-THON 3.0 | India's Longest Hackathon</title>
+    <meta name="description"
+        content="Graph-e-Thon 3.0 is a 72-hour national-level hackathon bringing together top student teams from across India to design and prototype market-ready solutions." />
+
+    <!-- Google model-viewer for 3D GLB rendering -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+    <style>
+        @keyframes float-custom-icon {
+            0% {
+                transform: translateY(0px) scale(1);
+                filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+            }
+
+            50% {
+                transform: translateY(-12px) scale(1.03);
+                filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.6));
+            }
+
+            100% {
+                transform: translateY(0px) scale(1);
+                filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+            }
+        }
+
+        .custom-animated-icon {
+            animation: float-custom-icon 4s ease-in-out infinite !important;
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
